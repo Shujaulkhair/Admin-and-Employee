@@ -18,7 +18,7 @@ public class EditEmployeeServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		HttpSession hs = req.getSession(false);
 		if(hs == null) {
-			System.out.println("if.doGet()");
+			
 			req.setAttribute("msg", "session Expired");
 			req.getRequestDispatcher("Msg.jsp").forward(req, res);
 			

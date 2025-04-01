@@ -5,7 +5,7 @@ public class DBConnection {
 	private DBConnection() {
 		
 	}
-	public static Connection con;
+	public static Connection con = null;
 	static {
 		try {
 			Class.forName(DBinfo.driver);
